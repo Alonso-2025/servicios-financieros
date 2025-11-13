@@ -1,0 +1,90 @@
+# Node
+node_modules/
+
+# Next.js build/output
+.next/
+out/
+.next.cache/
+.vercel/
+.vercel_build_output/
+
+# Production build
+dist/
+build/
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Testing / coverage
+coverage/
+coverage-final.json
+jest-cache/
+.playwright/
+playwright-report/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Misc caches
+.cache/
+.pnpm-store/
+.cache-loader/
+
+# Optional lockfiles: do NOT ignore lockfiles by default
+# If your project uses a lockfile you don't want committed, uncomment one below
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Local OS-specific files
+*.swp
+*.swo
+
+# dotenv environment variable files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Parcel / Next caches
+.cache/
+.parcel-cache/
+
+# Logs and debug
+debug.log*
+
+# Coverage reports
+coverage/
+
+# Build output for static export
+out/
+
+# Temporary files
+tmp/
+temp/
+
+# Storybook build
+.storybook/
+storybook-static/
