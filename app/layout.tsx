@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Cinzel } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import WhatsAppFAB from "@/components/WhatsappFab";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="es" className={cinzel.variable}>
       <body className="font-body cinzel">
         {children}
+        <WhatsAppFAB />
         <Toaster />
         <Analytics />
         <SpeedInsights />
