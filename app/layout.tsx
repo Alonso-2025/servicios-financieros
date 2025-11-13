@@ -15,7 +15,7 @@ const cinzel = Cinzel({
 export const metadata: Metadata = {
   title: "Tijuana Fiscal Solutions",
   description:
-    "Soluciones de consultoría fiscal y financiera en Baja California. Planificación fiscal con IA, testimonios de éxito y más.",
+    "Soluciones de consultoría fiscal y financiera en Baja California. Planificación fiscal, testimonios de éxito y más.",
 };
 
 export default function RootLayout({
