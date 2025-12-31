@@ -95,7 +95,7 @@ export const metadata: Metadata = {
   
   // Verification and ownership
   verification: {
-    google: "your-google-verification-code", // Replace with actual code
+    google: "gP9GKT3j9zTKb4XzBbHjcva-lpR7ihUBd2ZXRuFMUDs",
   },
   
   // Canonical and alternates
