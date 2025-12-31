@@ -1,14 +1,8 @@
 "use server"
 
-import nodemailer from "nodemailer"
+import { Resend } from "resend"
 
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER, // Gmail address
-    pass: process.env.EMAIL_PASS, // Gmail App Password (16 characters)
-  },
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function submitContactForm(prevState: any, formData: FormData) {
   // Honeypot (bot protection)
@@ -45,10 +39,11 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
 
   try {
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO || process.env.EMAIL_USER,
+    await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
+      to: process.env.RESEND_TO_EMAIL || "delivered@resend.dev",
       subject: `Nueva consulta de contacto: ${name}`,
+      replyTo: email,
       html: `
         <h2>Nuevo mensaje desde tu sitio web</h2>
         <p><strong>Nombre:</strong> ${name}</p>
