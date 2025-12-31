@@ -121,7 +121,16 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          &copy; {year} A.V Servicios Fiscales. Todos los derechos reservados.
+          &copy; {year} A.V Servicios Fiscales. Todos los derechos reservados.| Designed by{' '}
+          <a
+            href="https://codevostudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors underline"
+          >
+            Codevostudio
+          </a>
+          .
         </div>
       </div>
     </footer>
